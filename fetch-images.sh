@@ -32,6 +32,7 @@ wget https://bunniefoo.com/netv2/production/part2.ext4.gz
 printf "Unzipping part2.ext4.gz\n"
 gunzip part2.ext4.gz
 
+printf "Computing m5dsums and checking manifest\n"
 md5sum part1.img >> check.md5
 md5sum part2.ext4 >> check.md5
 md5sum partition.txt >> check.md5
