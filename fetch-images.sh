@@ -29,6 +29,7 @@ wget https://bunniefoo.com/netv2/production/partition.txt
 wget https://bunniefoo.com/netv2/production/part1.img
 wget https://bunniefoo.com/netv2/production/part2.ext4.gz
 
+printf "Unzipping part2.ext4.gz\n"
 gunzip part2.ext4.gz
 
 md5sum part1.img >> check.md5
@@ -46,7 +47,9 @@ if ! cmp -s check.md5 manifest.md5 ; then
 
     rm -rf *
 
-    printf "\nPress enter to continue...\n"
+    printf "\nPress enter twice to continue...\n"
+    
+    read dummy
     read dummy
     exit 1
 fi
@@ -62,6 +65,8 @@ printf "\ndirectory: \n"
 ls -l
 date
 
-printf "\nPress enter to continue...\n"
+printf "\nPress enter twice to continue...\n"
+
+read dummy
 read dummy
 exit 0
