@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Burn SD Cards
+Exec=/home/bunnie/run-pyromaniac.sh
+Terminal=true
+Path=/home/bunnie
+Icon=/usr/share/pixmaps/synaptic.png
+Comment=Run SD card burner application
+Encoding=UTF-8
+Type=Application
+Catagories=None;
+X-KeepTerminal=true
+

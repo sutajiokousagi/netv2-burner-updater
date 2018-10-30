@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Fetch Firmware
+Exec=/home/bunnie/fetch-images.sh
+Terminal=true
+Path=/home/bunnie
+Icon=/usr/share/pixmaps/xarchiver/xarchiver-add.png
+Comment=Fetch latest firmware from Alphamax LLC
+Encoding=UTF-8
+Type=Application
+Catagories=None;
+X-KeepTerminal=true
+
