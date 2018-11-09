@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Update Tester
+Exec=/home/pi/update_full_tester.sh
+Terminal=true
+Path=/home/pi
+Icon=/usr/share/pixmaps/xfdesktop/xfdesktop-fallback-icon.png
+Comment=Update FPGA inside NeTV2
+Encoding=UTF-8
+Type=Application
+StartupNotify=true
+Catagories=None;
+X-KeepTerminal=true
