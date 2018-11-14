@@ -30,7 +30,7 @@ sudo chmod u+s tester-driver
 
 printf "Updating the tester - UI\n"
 cd /home/pi/code/jig-20-interface-http
-git pull origin master
+git pull alphamax master
 if [ $? -ne 0 ]; then
     printf "Trouble updating the tester, send this info to bunnie@alphamaxmedia.com\n"
     read dummy
