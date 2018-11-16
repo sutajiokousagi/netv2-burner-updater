@@ -13,6 +13,9 @@ fi
 
 printf "Updating the tester - quicktest\n"
 cd /home/pi/code/netv2-tests
+printf "Clearing local changes\n"
+git reset --hard  # to clear any local changes, maybe remove this on the next update
+printf "Now pulling latest code\n"
 git pull origin quicktest
 if [ $? -ne 0 ]; then
     printf "Trouble updating the tester, send this info to bunnie@alphamaxmedia.com\n"
