@@ -25,10 +25,10 @@ cd /home/bunnie/images/production
 rm -rf *
 
 # well, that's useless...sectigo bought comodo and the cert packages don't have the new certificates.
-wget --no-check-certificate https://bunniefoo.com/netv2/production/manifest.md5
-wget --no-check-certificate https://bunniefoo.com/netv2/production/partition.txt
-wget --no-check-certificate https://bunniefoo.com/netv2/production/part1.img
-wget --no-check-certificate https://bunniefoo.com/netv2/production/part2.ext4.gz
+wget https://bunniefoo.com/netv2/production/manifest.md5
+wget https://bunniefoo.com/netv2/production/partition.txt
+wget https://bunniefoo.com/netv2/production/part1.img
+wget https://bunniefoo.com/netv2/production/part2.ext4.gz
 
 printf "Unzipping part2.ext4.gz\n"
 gunzip part2.ext4.gz
